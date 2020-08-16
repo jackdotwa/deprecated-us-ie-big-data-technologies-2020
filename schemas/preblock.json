@@ -1,0 +1,13 @@
+   {
+      "author": {
+          "name": "John Doe",
+          "student_nr": 12345678,
+          "email": "12345678@sun.ac.za"
+      },
+      "big-data-value": [
+        {
+            "question": "Loosely define the term _data product_ and provide an example",
+            "answer": ""
+        }
+      ]
+  } 
