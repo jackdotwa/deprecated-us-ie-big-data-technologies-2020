@@ -265,7 +265,7 @@
       "questions": [
         {
           "question": "Generate an openssh/RSA public-private key pair. Submit the public key on the SUNLearn platform. A server address will be provided in due course. You may then transfer/deliver the completed assignment (e.g. `12345678-preblock.json`) using the `ssh` or `sftp` protocol",
-          "answer": "",
+         "answer": "",
           "total_marks": 3
         }
       ]
