@@ -33,9 +33,9 @@ To create an input and output topic and subscription, run:
 ```
 
 #### Create a consumer
-To create a standalone Pub/Sub consumer (i.e. subscription) that listens for published messages, run:
+To create a standalone Pub/Sub consumer (i.e. subscription) that listens for published messages, run (for example):
 ```
-./custom_consumer.sh
+./custom_consumer.sh input_subscription
 ```
 
 #### Create a publisher
