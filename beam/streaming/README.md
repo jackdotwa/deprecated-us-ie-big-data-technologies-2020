@@ -73,9 +73,11 @@ NUM_RECORDS = int(1e5)
 in `pubsub-emulator/messages.py`. You should be able to run this code in any Unix based system
 (use docker if you need a sandbox). With these steps you will be able to run this code as is (see the `scripts` folder):
 
-1. `./start_pubsub_emulator.sh`: this will occupy a terminal so keep extra one handy (or `.`/start_pubsub_emulator.sh > /dev/null &` --- run in background and redirect output to null)
+1. `./start_pubsub_emulator.sh`: this will occupy a terminal so keep extra one handy (or `.`/start_pubsub_emulator.sh &> /dev/null &` --- run in background and redirect output to null)
 2. `./create_topics_subs.sh` 
-3. `./custom_publisher.sh`: this too will occupy a terminal and you do want to see this output while experimenting
+3. `./custom_publisher.sh`: this too will occupy a terminal and you do want to see this output while experimenting (see the comments in the code about reducing the volume of messages)
 4. `./assignment_run.sh`
 
-If you struggle with the setup, pop us on Slack (as always). 
+If you struggle with the setup, pop us on Slack (as always).
+
+The only files you will need to modify for experimentation are `pubsub-emulator/messages.py` and `assignment.py`. You will need to add to `assignment.py` to complete the tasks. 
