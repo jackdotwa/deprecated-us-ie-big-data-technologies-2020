@@ -25,8 +25,8 @@ class JobOptions(PipelineOptions):
 
 def custom_timestamp(message):
     """
-    you need to tell Beam which field is your event time. This stub is assuming message is
-    a row with a field 'timestamp' which is being indexed here - do this as you wish.
+    you need to tell Beam which field is your event time. This stub is assuming the 'message' is
+    a row with a field 'timestamp', which is being indexed here. Do here as you wish.
     :param message:
     :return:
     """
@@ -58,7 +58,7 @@ def run(argv=None, save_main_session=True):
     source = ReadFromPubSub(subscription=str(job_options.input))
 
     ###
-    #  STREAMING BEAM: add the necessary pipeline stages along with whatever function your require above
+    #  STREAMING BEAM: add the necessary pipeline stages along with whatever functions you require in this file
     ###
     p = beam.Pipeline(options=pipeline_options)
     lines = (
